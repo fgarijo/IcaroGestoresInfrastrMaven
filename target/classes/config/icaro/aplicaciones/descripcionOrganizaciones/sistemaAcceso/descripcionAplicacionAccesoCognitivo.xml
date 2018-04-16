@@ -27,16 +27,16 @@
 	********************************************************************************************************-->
 			<icaro:DescComportamientoAgentesAplicacion>
 				<icaro:DescComportamientoAgente
-					nombreComportamiento="AgenteAplicacionAcceso" rol="AgenteAplicacion" localizacionComportamiento="org.icaro.aplicaciones.agentes.agenteAplicacionAccesoCognitivo"
+					nombreComportamiento="AgenteAplicacionAcceso" rol="AgenteAplicacion" localizacionComportamiento="icaro.aplicaciones.agentes.agenteAplicacionAccesoCognitivo"
 					tipo="ADO"
-                                        localizacionFicheroReglas="org.icaro.aplicaciones.agentes.agenteAplicacionAccesoCognitivo.procesoResolucionObjetivos.reglasAgenteAcceso.drl"/>
+                                        localizacionFicheroReglas="icaro.aplicaciones.agentes.agenteAplicacionAccesoCognitivo.procesoResolucionObjetivos.reglasAgenteAcceso.drl"/>
 			</icaro:DescComportamientoAgentesAplicacion>
 		</icaro:DescComportamientoAgentes>
 	<!--******************************************************************************************************
 	******************   Descripción de los recursos de aplicación							******************
 	********************************************************************************************************-->
 		<icaro:DescRecursosAplicacion>
-			<icaro:DescRecursoAplicacion nombre="PersistenciaAccesoSimple" localizacionClaseGeneradora="org.icaro.aplicaciones.recursos.persistenciaAccesoSimple.imp.ClaseGeneradoraPersistenciaAccesoSimple"/>
+			<icaro:DescRecursoAplicacion nombre="PersistenciaAccesoSimple" localizacionClaseGeneradora="icaro.aplicaciones.recursos.persistenciaAccesoSimple.imp.ClaseGeneradoraPersistenciaAccesoSimple"/>
 
             <icaro:DescRecursoAplicacion nombre="VisualizacionAcceso"/>
 

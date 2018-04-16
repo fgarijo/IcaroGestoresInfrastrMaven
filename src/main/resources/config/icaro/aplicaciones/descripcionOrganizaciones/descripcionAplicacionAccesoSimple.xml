@@ -28,7 +28,7 @@
 			<icaro:DescComportamientoAgentesAplicacion>
 				<icaro:DescComportamientoAgente
 					nombreComportamiento="AgenteAplicacionAcceso" rol="AgenteAplicacion" 
-					localizacionComportamiento="org.icaro.aplicaciones.agentes.agenteAplicacionAccesoReactivo.comportamiento"
+					localizacionComportamiento="icaro.aplicaciones.agentes.agenteAplicacionAccesoReactivo.comportamiento"
 					tipo="Reactivo" />
 			</icaro:DescComportamientoAgentesAplicacion>
 		</icaro:DescComportamientoAgentes>
@@ -37,7 +37,7 @@
 	********************************************************************************************************-->
 		<icaro:DescRecursosAplicacion>
 			<icaro:DescRecursoAplicacion nombre="PersistenciaAccesoSimple"
-			localizacionClaseGeneradora="org.icaro.aplicaciones.recursos.persistenciaAccesoSimple.imp.ClaseGeneradoraPersistenciaAccesoSimple"/>
+			localizacionClaseGeneradora="icaro.aplicaciones.recursos.persistenciaAccesoSimple.imp.ClaseGeneradoraPersistenciaAccesoSimple"/>
 			<icaro:DescRecursoAplicacion nombre="VisualizacionAcceso"/>
 		</icaro:DescRecursosAplicacion>
 	</icaro:DescripcionComponentes>
