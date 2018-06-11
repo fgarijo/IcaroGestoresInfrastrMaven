@@ -78,7 +78,14 @@ public abstract class TareaSincrona {
         itfProcObjetivos.insertarHecho(resultadoTarea);
     //  envioHechos.insertarHecho(contenido);
     }
-    
+    public void generarInformeTemporizado (long milis,String idTarea,String idAgenteOrdenante, Object contenido){
+        String goalId = null ;
+        InformeDeTarea informeTarea = new InformeDeTarea (NombresPredefinidos.PREFIJO_TAREA_TIMEOUT+idTarea,goalId,idAgenteOrdenante, contenido );
+//        Temporizador informeTemporizado = new Temporizador ( milis, itfProcObjetivos,informeTarea );
+//        informeTemporizado.start();
+            Temporizador1 informeTemporizado = new Temporizador1 ( milis, itfProcObjetivos,informeTarea );
+            informeTemporizado.ejecutar();
+    }
     public void generarInformeTemporizado (long milis,String idTarea,Objetivo contxtGoal,String idAgenteOrdenante, Object contenido){
         String goalId = null ;
         if (contxtGoal!=null){
@@ -86,8 +93,10 @@ public abstract class TareaSincrona {
         }
         if(contenido==null)contenido = NombresPredefinidos.PREFIJO_MSG_TIMEOUT;
         InformeDeTarea informeTarea = new InformeDeTarea (idTarea,goalId,idAgenteOrdenante, contenido );
-        Temporizador informeTemporizado = new Temporizador ( milis, itfProcObjetivos,informeTarea );
-        informeTemporizado.start();
+//        Temporizador informeTemporizado = new Temporizador ( milis, itfProcObjetivos,informeTarea );
+//        informeTemporizado.start();
+            Temporizador1 informeTemporizado = new Temporizador1 ( milis, itfProcObjetivos,informeTarea );
+            informeTemporizado.ejecutar();
     }
     public void generarInformeTemporizadoFromConfigProperty (String identproperty,Objetivo contxtGoal,String idAgenteOrdenante, Object contenido){
         try {

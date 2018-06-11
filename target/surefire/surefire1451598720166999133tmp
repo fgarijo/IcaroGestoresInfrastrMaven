@@ -1,6 +1,0 @@
-#surefire
-#Tue Apr 17 17:35:34 CEST 2018
-maven.ext.class.path=C\:\\Program Files\\NetBeans 8.2\\java\\maven-nblib\\netbeans-eventspy.jar
-user.dir=E\:\\FicheroRed\\Github\\IcaroGestoresInfrastrMaven
-localRepository=C\:\\Users\\FGarijo\\.m2\\repository
-basedir=E\:\\FicheroRed\\Github\\IcaroGestoresInfrastrMaven
