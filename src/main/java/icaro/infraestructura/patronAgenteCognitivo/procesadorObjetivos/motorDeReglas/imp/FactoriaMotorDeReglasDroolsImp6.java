@@ -147,12 +147,10 @@ public class FactoriaMotorDeReglasDroolsImp6 extends FactoriaMotorDeReglas {
         if (results.hasMessages(Level.ERROR)) {
 //         Results results = kContainer.verify();
                List<Message> mensajes = results.getMessages();
-                for (Iterator<Message> it = mensajes.iterator(); it.hasNext();) {
-                    Message message = it.next();
-                    System.out.println(">> Message ( "+message.getLevel()+" ): "+message.getText());
-                    trazas.trazar(idAgent, message.getText(), InfoTraza.NivelTraza.error);
-                    
-                }
+             for (Message message : mensajes) {
+                 System.out.println(">> Message ( "+message.getLevel()+" ): "+message.getText());
+                 trazas.trazar(idAgent, message.getText(), InfoTraza.NivelTraza.error);
+             }
           return null;  
         }
         kBase = kieHelper.build();

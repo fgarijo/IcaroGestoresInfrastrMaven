@@ -163,10 +163,8 @@ public class MisObjetivos {
     }
 
     public void deleteObjetivosSolved() {
-        Iterator<Objetivo> it = misObjetivosPriorizados.iterator();
-        while (it.hasNext()) {
+        for (Objetivo ob:misObjetivosPriorizados ){
             //Hay al menos un objetivo    		
-            Objetivo ob = it.next();
             String obrefId = ob.getobjectReferenceId();
             if (ob.getState() == Objetivo.SOLVED) {
                 if (obrefId != null) {

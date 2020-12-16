@@ -38,10 +38,10 @@ public class VisualizacionTrazasContr {
    public  VisualizacionTrazasContr (){
         tablaPanelesEspecificos = new HashMap();      
         identsTiposEntidades = new HashSet();
-        listaElementosTrazables = new LinkedList<String>();
+        listaElementosTrazables = new LinkedList<>();
         TipoAgente[] tg= TipoAgente.values();
-        for (int i=0; i< tg.length ;i++ ){
-            identsTiposEntidades.add(tg[i].value());
+        for (TipoAgente tg1 : tg) {
+            identsTiposEntidades.add(tg1.value());
         }
         identsTiposEntidades.add(NombresPredefinidos.NOMBRE_ENTIDAD_RECURSO);
         infoPanels = new InfoPanelesEspecificos();
