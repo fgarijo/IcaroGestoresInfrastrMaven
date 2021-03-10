@@ -86,7 +86,7 @@ public class MisObjetivos {
 
     public void inicializar() {
         misObjetivosPriorizados = new ArrayList();
-        setOfIGoalRefIds = new TreeSet<String>();
+        setOfIGoalRefIds = new TreeSet<>();
         objetivoEnCurso = null;
     }
 
