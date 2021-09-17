@@ -102,17 +102,20 @@ public class SchemaValidator {
 
    private class ValidationErrorHandler implements ErrorHandler {
 
+       @Override
        public void warning(SAXParseException arg0) throws SAXException {
            log.warn(arg0+"\n\n");
 
        }
 
+       @Override
        public void error(SAXParseException arg0) throws SAXException {
            log.error(arg0+"\n\n");
            valid = false;
 		   throw arg0;
        }
 
+       @Override
        public void fatalError(SAXParseException arg0) throws SAXException {
            log.fatal("No se puede validar el fichero de configuracion " + arg0+"\n\n");
            valid = false;

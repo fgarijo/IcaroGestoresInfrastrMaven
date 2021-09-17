@@ -138,7 +138,7 @@
 	</xs:complexType>
 	<xs:simpleType name="NombreAgente">
 		<xs:restriction base="xs:string">
-			<xs:pattern value="(AgenteAplicacion|GestorOrganizacion|GestorRecursos|GestorAgentes|GestorNodo)([A-Za-z0-9])*"/>
+			<xs:pattern value="([A-Za-z]|AgenteAplicacion|GestorOrganizacion|GestorRecursos|GestorAgentes|GestorNodo)([A-Za-z0-9])*"/>
 		</xs:restriction>
 	</xs:simpleType>
 	<xs:complexType name="Propiedad">

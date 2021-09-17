@@ -239,6 +239,8 @@ public class ComprobadorDescripciones {
               logger.fatal(msgInfoUsuario);              
           }else especCorrecta= true;
       if (!existeClase(rutaEntidadEspecificada)){
+          String rutaBusquedaAlternativa =rutaEntidadPorDfto + "." +NombresPredefinidos.NOMBRE_ACCIONES_SEMANTICAS+identDescComptoEntidad+".class";
+          if (!existeClase(rutaBusquedaAlternativa)){
            msgInfoUsuario = "Error no se encuentra la  clase especificada \n"+
                             "Para la  entidad:" + identDescComptoEntidad + 
                             "En la ruta: " + rutaEntidadEspecificada + "\n" +
@@ -248,6 +250,7 @@ public class ComprobadorDescripciones {
                     errores.add(traza);
                     logger.fatal(msgInfoUsuario);
       }//else if (especCorrecta) return true;
+      }
       return rutaEntidadEspecificada;
   } 
         
@@ -381,9 +384,7 @@ public class ComprobadorDescripciones {
                 }else rutaclaseGeneradoraPorDefecto = rutaClaseGeneradoraEspecificada;
                 recursoAplicacion.setLocalizacionClaseGeneradora(
                         validarRutaClaseEntidad(rutaClaseGeneradoraEspecificada,rutaclaseGeneradoraPorDefecto, nombreRecurso));
-               return recursoAplicacion;
-                   
-                        
+               return recursoAplicacion;                 
         }
         public boolean existeClase(String rutaClase) {		
 		Class clase;

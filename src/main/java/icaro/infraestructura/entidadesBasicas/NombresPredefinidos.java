@@ -1,10 +1,8 @@
 package icaro.infraestructura.entidadesBasicas;
-
 import icaro.infraestructura.recursosOrganizacion.recursoTrazas.ItfUsoRecursoTrazas;
 import icaro.infraestructura.recursosOrganizacion.repositorioInterfaces.ItfUsoRepositorioInterfaces;
-
 /**
- * Definiciones de los nombres de las interfaces. Se puede heredar de esta clase en cada aplicaci�n
+ * Definiciones de los nombres 
  * @author Francisco J Garijo
  * @version 1.0
  */
@@ -21,7 +19,6 @@ public class NombresPredefinidos {
   public static String NOMBRE_GESTOR_RECURSOS = "GestorRecursos" ;
   public static String NOMBRE_GESTOR_ORGANIZACION ="GestorOrganizacion" ;
   public static String NOMBRE_GESTOR_NODO ="GestorNodo" ;
-  public static String NOMBRE_GESTOR_APLICACION_COMUNICACION = "GestorAplicacionComunicacion";
   public static String NOMBRE_INICIADOR ="Iniciador" ;
   public static String NOMBRE_AGENTE_APLICACION = "AgenteAplicacion";
   public static String ACTIVACION_PANEL_TRAZAS_DEBUG = "true";
@@ -37,9 +34,9 @@ public class NombresPredefinidos {
  // public static final String EXPR_REG_NOMBRE_FICHERO_AS = "AccionesSemanticas([0-9a-zA-Z])*.class";
   public static final String NOMBRE_FICHERO_PDFTO_AUTOMATA = "automata.xml";
   public static final String NOMBRE_FICHERO_PDFTO_REGLAS = "reglas.drl";
-  public static final String NOMBRE_FICHERO_PDFTO_ACCIONES_SMT = "AccionesSemanticas.class";
+  public static final String NOMBRE_FICHERO_PDFTO_ACCIONES_SMT = "Acciones.class";
   public static final String NOMBRE_ACCIONES_SEMANTICAS = "AccionesSemanticas";
-  public static final String EXPR_REG_ACCIONES_AGTE_REACTIVO = "AccionesSemanticas([0-9a-zA-Z])*.class";
+  public static final String EXPR_REG_ACCIONES_AGTE_REACTIVO = "Acciones([0-9a-zA-Z])*.class";
   public static final String NOMBRE_TABLA_AUTOMATA_EF = "automata";
   public static final String NOMBRE_FICHERO_CL_GENER_RECURSO = "ClaseGeneradora.class";
 //  public static final String EXPR_REG_NOMBRE_FICHERO_AUTOMATA = "automata*.xml";
@@ -77,10 +74,9 @@ public class NombresPredefinidos {
   public static final String COMPORTAMIENTO_PORDEFECTO_GESTOR_RECURSOS = "gestorRecursos.comportamiento";
   public static final String RUTA_AGENTES_APLICACION = "icaro.aplicaciones.agentes";
   public static final String RUTA_RECURSOS_APLICACION = "icaro.aplicaciones.recursos";
-
   public static final String RUTA_CLASES_GENERADORAS_ORGANIZACION = "icaro.infraestructura.clasesGeneradorasOrganizacion";
   public static  String CLASES_GENERADORA_ORGANIZACION_PORDEFECTO = "icaro.infraestructura.clasesGeneradorasOrganizacion.ArranqueSistemaSinAsistente";
-  public static final String PREFIJO_CLASE_ACCIONES_SEMANTICAS = "AccionesSemanticas";
+  public static final String PREFIJO_CLASE_ACCIONES_SEMANTICAS = "Acciones";
   public static final String PREFIJO_CLASE_GENERADORA_RECURSO = "ClaseGeneradora";
   public static final String PREFIJO_AUTOMATA = "automata";
   public static final String FICHERO_AUTOMATA = "automata.xml";
@@ -122,7 +118,6 @@ public class NombresPredefinidos {
   public static final String INPUT_ACTIVAR = "activar";
   public static final String INPUT_TERMINAR = "terminar";
   public static final String NOMBRE_TRANSICION_AUTOMATA_EF = "transicion";
-  
   public static final String NOMBRE_MODO_BLOQUEANTE_AUTOMATA_EF_SIN_ACCION ="bloqueante";
   public static final String NOMBRE_MODO_CONCURRENTE_AUTOMATA_EF_SIN_ACCION ="paralelo";
   public static final String NOMBRE_TRANSICION_UNIVERSAL_AUTOMATA_EF ="transicionUniversal";
@@ -142,7 +137,6 @@ public class NombresPredefinidos {
   public static  String DESCRIPCION_XML_POR_DEFECTO = "descripcionAcceso.xml";
   public  static  ItfUsoRecursoTrazas RECURSO_TRAZAS_OBJ = null;
   public  static ItfUsoRepositorioInterfaces REPOSITORIO_INTERFACES_OBJ = null;
-
  // Factoria Agente Cognitivo
   public final static String RUTA_PROCESO_RESOLUCION_COGNITIVO = "/icaro/application/agent/<PAQUETE>/goalResolutionProcess/reglas.drl";
   public final static String RUTA_FACTORIA_COGNITIVO = "icaro.infrastructura.patronAgenteCognitivo.factoriaEInterfacesPatCogn.imp";
